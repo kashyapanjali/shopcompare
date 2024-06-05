@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from './Assets/logo.png'
 
 export default function Navbar(props) {
   const [hoveredButton, setHoveredButton] = useState(null);
@@ -30,7 +31,9 @@ export default function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark" style={{ borderBottom: '1px solid #ccc' }}>
       <div className="container-fluid">
-        <a className="navbar-brand" href="/" style={{ color: '#EE4B2B', marginLeft: '20px' }}>
+        
+        <a className="navbar-brand" href="/" style={{ color: '#EE4B2B', marginLeft: '15px' }}>
+        <img src={logo}alt="logo" height={20} style={{paddingBottom:'5px'}}/>  
           ShopMeasure
         </a>
 
@@ -51,7 +54,7 @@ export default function Navbar(props) {
           <form className="d-flex mr-auto" style={{ position: 'relative' }}>
             <div className="input-group" style={{ width: '700px', marginLeft: '100px' }}>
               <input type="text" className="form-control" placeholder="Search Shopmeasure.in" aria-label="Search" aria-describedby="search-button" style={{ borderColor: '#ccc' }} />
-              <select className="form-select" style={{ borderColor: '#ccc', borderLeft: '1px solid #ccc', width: '100px' }}>
+              <select className="form-select " style={{ borderColor: '#ccc', borderLeft: '1px solid #ccc', width: '100px' }}>
                 <option value="all">All</option>
                 <option value="products">Products</option>
                 <option value="categories">Categories</option>
