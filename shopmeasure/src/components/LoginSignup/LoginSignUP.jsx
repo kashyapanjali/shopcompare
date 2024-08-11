@@ -9,12 +9,12 @@ const LoginSignUP = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container height">
       <div className="row justify-content-md-center mt-5">
-        <div className="col-md-6">
+        <div className="col-md-4">
           <div className="card">
             <div className="card-body">
-              <h2 className="text-center mb-4 ">{isSignUp ? 'Sign Up' : 'Sign In'}</h2>
+              <h2 className="text-center mb-3"style={{color:"#EE4B2B"}}>{isSignUp ? 'Sign Up' : 'Sign In'}</h2>
               <form>
                 {isSignUp && (
                   <div className="form-group">
@@ -39,13 +39,16 @@ const LoginSignUP = () => {
                   </div>
                 )}
 
-                <button type="submit" className="btn btn-danger w-100">
+                {/*Click mode of login signUp...... */}
+                <button type="submit" className="btn btn-primary w-100 "style={{marginTop:'15px',backgroundColor:"#EE4B2B",border:"1px solid #ccc"}}>
                   {isSignUp ? 'Sign Up' : 'Sign In'}
                 </button>
               </form>
+              
+              {/* switch mode of login signUp code here......*/}
               <div className="text-center mt-3">
-                <button className="btn btn-link" onClick={switchMode}>
-                  {isSignUp ? 'Already have an account? Sign In' : "Don't have an account? Sign Up"}
+                <button className="btn btn-link" style={{color:"#EE4B2B"}} onClick={switchMode}>
+                  {isSignUp ? 'Already have an account? Sign In' : "Don't have an account? Sign Up" }
                 </button>
               </div>
             </div>

@@ -1,15 +1,16 @@
 .container {
-    padding: 20px;
+    padding: 80px;
   }
   
   .card {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border-radius: 10px;
-    padding: 20px;
+    /* padding: 10px; */
+    height: 100%;
   }
   
   .card-body {
-    padding: 30px;
+    padding: 10px;
   }
   
   .text-center {
@@ -43,4 +44,14 @@
     color: #007bff;
     text-decoration: none;
   }
+
+  /* @media (max-width: 778.98px) {
+    .card {
+      width: 90%;
+      height: 80%;
+      padding: 15px;
+    }
+  } */
+
+  
   
